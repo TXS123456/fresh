@@ -1,0 +1,11 @@
+//跨域
+module.exports={
+    devServer:{
+        proxy:{
+            "/api":{
+                target:"https://zuul.gfresh.cn",
+                changeOrigin:true,
+            }
+        }
+    }
+}
